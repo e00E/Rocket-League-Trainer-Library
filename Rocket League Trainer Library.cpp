@@ -107,6 +107,7 @@ namespace rocket_league_trainer {
 		return ball_position.get_final_address() != NULL && car_position.get_final_address() != NULL;
 	}
 
+	// This is taken from Rocket League Trainer http://www.rocketleaguetrainer.com/p/download
 	void disable_scoring() {
 		unsigned char *address(rli.base_address + scoring_code_address);
 		unsigned char code[] = { 0xE9, 0xB7, 0x06, 0x00, 0x00 };
